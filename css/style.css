@@ -39,13 +39,22 @@ header {
     gap: 1rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    & li:hover {
+      color: var(--brand-color);
+    }
     & li img[src="assets/Imagens/Profile pic.png"] {
       width: 2.5rem;
       height: 2.5rem;
+      cursor: pointer;
     }
     & li img[src="assets/Imagens/icons/MagnifyingGlass.svg"] {
       width: 1.5rem;
       height: 1.5rem;
+      &:hover {
+        filter: brightness(0) saturate(100%) invert(40%) sepia(66%)
+          saturate(529%) hue-rotate(319deg) brightness(107%) contrast(106%);
+      }
     }
   }
 }
